@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Define the URLs of the files you want to download
-URL1="https://raw.githubusercontent.com/svderived/quil-node-script/main/get-peer-id.sh"
-URL2="https://raw.githubusercontent.com/svderived/quil-node-script/main/pre.sh"
-URL3="https://raw.githubusercontent.com/svderived/quil-node-script/main/post.sh"
+URL1="https://raw.githubusercontent.com/krishislegend/quil-node-script/main/get-peer-id.sh"
+URL2="https://raw.githubusercontent.com/krishislegend/quil-node-script/main/pre.sh"
+URL3="https://raw.githubusercontent.com/krishislegend/quil-node-script/main/post.sh"
 
 FILE1=get-peer-id.sh
 FILE2=pre.sh
