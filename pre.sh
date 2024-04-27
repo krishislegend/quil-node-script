@@ -30,8 +30,8 @@ echo "net.core.rmem_max=600000000" >> /etc/sysctl.conf
 echo "net.core.wmem_max=600000000" >> /etc/sysctl.conf
 sysctl -p
 
-# Set up cron job for after reboot
-(crontab -l 2>/dev/null; echo "@reboot $(pwd)/post_reboot.sh") | crontab -
+# Set up cron job for after reboot#
+#(crontab -l 2>/dev/null; echo "@reboot $(pwd)/post_reboot.sh") | crontab -
 
 # Reboot the system to apply changes
 echo "System will reboot now..."
