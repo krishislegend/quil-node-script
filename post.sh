@@ -92,7 +92,7 @@ ufw allow 443
 ufw --force enable
 
 # Clear the cron job so it doesn't run again on subsequent reboots
-(crontab -l | grep -v '@reboot') | crontab -
+#(crontab -l | grep -v '@reboot') | crontab -
 
 echo "Node setup complete. The node has started successfully."
 
