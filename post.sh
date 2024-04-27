@@ -46,6 +46,7 @@ pkill -f "go/bin/node"
 # Configure .config/config.yml for gRPC and stats
 echo "Configuring gRPC and stats in config.yml..."
 sed -i 's/listenGrpcMultiaddr: ""/listenGrpcMultiaddr: "\/ip4\/127.0.0.1\/tcp\/8337"/' .config/config.yml
+sed -i '/statsMultiaddr/d' .config/config.yml  # This removes existing lines containing 'statsMultiaddr'
 sed -i '/engine:/a \  statsMultiaddr: "/dns/stats.quilibrium.com/tcp/443"' .config/config.yml
 
 # Build the node application
