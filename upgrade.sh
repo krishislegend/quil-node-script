@@ -36,10 +36,10 @@ service ceremonyclient start
 sleep 20
 
 # stop the ceremonyclient
-service ceremonylcient stop
+service ceremonyclient stop
 
 #restart the service
-service ceremonyclient star
+service ceremonyclient start
 
 # Show node service status
 systemctl status ceremonyclient --no-pager
