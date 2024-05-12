@@ -7,6 +7,9 @@ mv /root/go/bin/node /root/go/bin/node1.4.16
 # Move the latest node
 mv node-1.4.17-linux-amd64.bin /root/go/bin/node
 
+# change the permissions
+chmod +x /root/go/bin/node
+
 # stop the ceremonyclient
 service ceremonylcient stop
 
@@ -17,7 +20,7 @@ wget https://github.com/QuilibriumNetwork/ceremonyclient/archive/refs/tags/v1.4.
 sudo apt install unzip
 
 #unzip the folder
-unzip ceremonyclient-1.4.17
+unzip v1.4.17.zip
 
 # Remove the old Qclient
 rm /root/go/bin/qclient
