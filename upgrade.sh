@@ -31,3 +31,6 @@ GOEXPERIMENT=arenas go build -o /root/go/bin/qclient main.go
 
 #restart the service
 service ceremonyclient start
+
+# Show node service status
+systemctl status ceremonyclient --no-pager
